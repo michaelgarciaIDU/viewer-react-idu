@@ -1,6 +1,7 @@
 {
   "name": "viewer-react-sample",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
