@@ -19,7 +19,7 @@ export default async function handler(req, res) {
       scope: 'data:read data:write bucket:create bucket:read'
     });
 
-    const response = await fetch('https://developer.api.autodesk.com/authentication/v1/authenticate', {
+    const response = await fetch('https://developer.api.autodesk.com/authentication/v2/token', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: params
