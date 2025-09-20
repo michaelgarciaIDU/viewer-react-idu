@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
 
-const APS_MODEL_URN = 'dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bWlkZW1vLW53ZC1idWNrZXQvbW9kZWxvLm53ZA';
+const urlParams = new URLSearchParams(window.location.search);
+const APS_MODEL_URN = urlParams.get('urn');
 
 async function getAccessToken() {
   const res = await fetch('/api/token'); // Esto llama al serverless en Vercel
